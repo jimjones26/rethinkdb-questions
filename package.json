@@ -1,0 +1,27 @@
+{
+  "name": "rethinkdb-questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimjones26/rethinkdb-questions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimjones26/rethinkdb-questions/issues"
+  },
+  "homepage": "https://github.com/jimjones26/rethinkdb-questions#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cfenv": "^1.0.3",
+    "express": "^4.14.0",
+    "internal-ip": "^1.2.0",
+    "rethinkdb": "^2.3.2",
+    "socket.io": "^1.4.8"
+  }
+}
