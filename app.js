@@ -153,14 +153,17 @@ r.connect(connection, (err, conn) => {
       if (err) return;
       // new
       if (item.old_val === null && item.new_val !== null) {
+        console.log('ITEM NEW VALUE', item.new_val)
         io.emit('new', item.new_val)
       }
       // deleted
       else if (item.old_val !== null && item.new_val === null) {
+        console.log('ITEM OLD VALUE', item.old_val)
         io.emit('deleted', item.old_val)
       }
       // updated
       else if (item.old_val !== null && item.new_val !== null) {
+        console.log('ITEM UPDATED VALUE', item.new_val)
         io.emit('updated', item.new_val)
       }
     });
